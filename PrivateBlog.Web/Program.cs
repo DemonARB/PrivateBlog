@@ -1,9 +1,15 @@
-var builder = WebApplication.CreateBuilder(args);
+using PrivateBlog.Web;
+
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-var app = builder.Build();
+//Extraemos todo lo del CustomConfiguration
+builder.AddCustomBuilderConfiguration();
+
+
+WebApplication app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

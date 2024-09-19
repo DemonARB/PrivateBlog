@@ -6,7 +6,7 @@
     }
   },
   "ConnectionStrings": {
-    "MyConnection": "Server=(localdb)\\MyLocalDb; DataBase =PrivateBlog; User Id=Dres; Password = andres2005*; Encrypt = false; "
+    "MyConnection": "Server=(localdb)\\MyLocalDb; DataBase =; User Id=; Password =; Encrypt = false; "
   },
 
   "AllowedHosts": "*"
